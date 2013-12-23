@@ -12,7 +12,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider :digital_ocean do |docean, override|
 
-    docean.image = 'CentOS 6.4 x32'
+    #docean.image = 'CentOS 6.4 x32'
+    docean.image = 'Ubuntu 13.10 x64'
     docean.region = 'San Francisco 1'
     #docean.region = 'New York 1'
     docean.size = '512MB'
