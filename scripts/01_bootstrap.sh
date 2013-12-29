@@ -15,7 +15,7 @@ case $DISTRIB_ID in
     wget http://apt.puppetlabs.com/puppetlabs-release-$DISTRIB_CODENAME.deb
     dpkg -i puppetlabs-release-$DISTRIB_CODENAME.deb
     apt-get update
-    apt-cache install build-essential puppet
+    apt-get -y install build-essential puppet
     ;;
 
   *)
